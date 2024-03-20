@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "test-notifications",
-    "slug": "test-notifications",
+    "slug": "testnotifications",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,12 +19,29 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/notification-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.pgcode.testnotifications",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8342b1fe-2f78-41fc-837a-a6f0f982c673"
+      }
+    },
+    "owner": "pgcode",
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#ffffff"
+        }
+      ]
+    ]
   }
 }
